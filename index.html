@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/img/logo.svg" type="image/icon">
+    <title>Hello World</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img id="logo" src="img/logo.svg" alt="The logo for the page, a monitor and a hammer"/>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-active" href="index.html">Home</a></li>
+          <li class="nav-item"><a href="essay.html">Essay</a></li>
+          <li class="nav-item">
+            <a href="accessibility.html">Accessibility</a>
+          </li>
+          <li class="nav-item"><a href="info.html">Info</a></li>
+          <li class="nav-item"><a href="fun.html">Fun</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome-section">
+        <h1 id="welcome-title">Hello World!</h1>
+        <img src="img/coworkers2.svg" alt="Illustration of two people and a computer"/>
+
+        <p id="welcome-text">
+          We are a group of four first-year coumputer engineer students at
+          OsloMet. This website is our final assignment in the course DATA 1200
+          Inclusive Web Design.
+        </p>
+      </section>
+
+      <section class="our-courses-section">
+        <div class="our-courses">
+          <h2 id="our-courses-title">About our assignment:</h2>
+          <div class="information-cards-container">
+
+            <div class="fadein">
+            <div class="information-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <h3 class="course-title">Reflection-essay</h3>
+              <p class="course-text">
+                In our essay, we discussed our experiences as a group of first-time coders, as well as how the necessary tasks were handled and the transition from high school to university!
+              </p>
+              <a href="essay.html">Read More</a>
+            </div>
+          </div>
+          <div class="fadeout">
+            <div class="information-card">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+              </svg>
+              <h3>Accessibility</h3>
+              <p>
+                In our accessiblity page, we discuss how we have taken accessibility measures and made design decisions with accessibility in mind. Decisions as, "Colors","Coding choices","Readability" and much more!
+              </p>
+              <a href="accessibility.html">Read More</a>
+
+            </div>
+          </div>
+
+          <div class="fadein">
+            <div class="information-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                >
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round" 
+                stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+
+              <h3>Topical Information</h3>
+              <p>
+                On the Topical Information page, We've picked one of our well-written Texts from "Data 1100".It's about digital cities and the welfare state, as well as where you could find work in the future and The Laptop's Designer's Context of Use.
+              </p>
+              <a href="info.html">Read More</a>
+            </div>
+          </div>
+            <div class="fadeout">
+            <div class="information-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+              <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z"
+                />
+              </svg>
+              <h3>Fun</h3>
+              <p>
+                On our fun page we have decided to go with a different layout ("hacker layout") to switch it up. it contains information about computers with cool text and pictures. 
+              </p>
+              <a href="fun.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+    <script src="animationscroll.js"></script>
+  </body>
+</html>

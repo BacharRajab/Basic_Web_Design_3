@@ -1,0 +1,207 @@
+:root {
+  --background: #eeede7;
+  /*--boxfarge: #b9b7bd;*/
+  --dark-color: #23232e;
+  --light-grey: #868b8e;
+  --pink: #dbbdb3;
+  --pink-light: #e7d2cc;
+  --blue: #3e55b9;
+  --darkblue: #16547e;
+}
+
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  scroll-behavior: smooth;
+}
+
+/* ==========================================================
+    Main content
+   ==========================================================*/
+body {
+  background-image: url("../img/background.png");
+  background-color: var(--background);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background:var(--dark-color);
+}
+
+h1 {
+  color: var(--dark-color);
+  font-family: monospace;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #365465ff;
+  text-underline-offset: 0.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-width: 70ch;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+/* ==========================================================
+    Styles navigation bar
+   ==========================================================*/
+header {
+  background-color: rgb(229, 208, 202);
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding: 0.5rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+
+header #logo {
+    width: 50px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  Styles navigation menu links 
+   ==========================================================*/
+.nav-item {
+  align-self: center;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/*Styles link for the page the user is on*/
+.nav-active {
+  color: #16547e !important;
+}
+
+.nav-item a {
+  color: var(--dark-color);
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--light-grey);
+}
+
+/* ==========================================================
+    Styles screens smaller than 700px
+   ==========================================================*/
+@media screen and (max-width: 700px) {
+
+  main {
+    margin-top: 3rem;
+  }
+
+  /*Replaces background picture with a cropped version*/
+  body {
+    background-image: url("../img/bkgd-small.png");
+    background-size: 700px auto;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  /*Changes navigation bar to be displayed in a single column*/
+  header {
+    background-color: transparent;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+  }
+
+  header #logo {
+    align-self: start;
+    margin: 0;
+    margin-bottom: 1rem;
+    width: 70px;
+  }
+
+  .nav-list {
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  /*Styles welcome section for smaller screens*/
+  #welcome {
+    margin: 0 auto;
+    width: 95%;
+  }
+  
+  .welcome-section img {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  body {
+    background-size: 1000px auto; 
+    /*Prevents the background height from being too small where it doesn't cover the navbar*/
+  }
+}

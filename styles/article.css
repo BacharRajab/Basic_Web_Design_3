@@ -1,0 +1,123 @@
+/* ===========================================================
+    Styles main content of pages
+   ===========================================================*/
+.text-article {
+    max-width: 46rem;
+    margin: 0 auto 5rem;
+    width: 95%;
+}
+
+.text-article img{
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.text-article h2 {
+    margin-bottom: 1.2rem;
+}
+
+.text-article a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+
+.text-article a:hover {
+    color: var(--grey);
+}
+
+/* ============================================================
+    Styles quotes
+   ============================================================*/
+.text-article blockquote {
+    background: var(--pink-light);
+    border-left: 0.5rem solid var(--pink);
+    color: #3d3d41;
+    display: inline-block;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 1rem 0 2rem 2rem;
+    max-width: 100%;
+    padding: 2rem 2rem;
+}
+
+blockquote p {
+    display: inline;
+    font-size: 2rem;
+}
+
+blockquote::before {
+    color: var(--pink);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+}
+
+/* =========================================================================
+    Styles paragraphs with a picture on the Info page
+   =========================================================================*/
+.article-intro {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 2rem;
+    margin: 4rem 0;
+}
+
+#ingress, .article-intro > p {
+    align-self: center; 
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+}
+
+.text-article figure {
+    align-self: center;
+    margin-inline-start: 0;
+    margin-inline-end: 0;    
+}
+
+.text-article figure > img {
+    align-self: flex-start;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#essay-figure {
+    margin-inline-start: 0;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    /*Places the picture below the paragraph on screens smaller than 1100px*/
+    .article-intro {
+      display: grid;
+      grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  
+    .text-article {
+        width: 90%;
+      }
+      
+    .text-article img, #essay-figure {
+        max-width: 100%;
+    }
+    .text-article blockquote {
+        margin-left: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    .article-intro {
+      width: 140%;
+      margin-left: -20%;
+    }
+  
+  }
